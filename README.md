@@ -18,6 +18,8 @@ cd react-weather
 
 npm install
 
+webpack
+
 npm run start
 
 ```
