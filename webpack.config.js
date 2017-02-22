@@ -1,5 +1,21 @@
+var webpack = require('webpack')
+
+
 module.exports={
-  entry: './app/app.jsx',  //entry file for webpack to start from
+  entry: [
+    'script!jquery/dist/jquery.min.js',
+    'script!foundation-sites/dist/foundation.min.js',
+    './app/app.jsx'
+  ],  //entry file for webpack to start from
+  externals: {
+    jquery: 'jQuery'
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery'
+    })
+  ],
   output: {                   // where to output.  uses dirname for root adn then places accordingly
     path: __dirname,
     filename: './public/bundle.js'
