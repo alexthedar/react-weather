@@ -19,3 +19,7 @@ $light-grey     : #BDBDBD;
 input[type=search] {
   box-shadow: none;
 }
+
+#city-name {
+  text-transform: capitalize;
+}

@@ -20,10 +20,11 @@ var Weather = React.createClass({
     })
 
     var that = this
-    openWeatherMap.getTemp(location).then(function(temp){
+    openWeatherMap.getTemp(location).then(function(data){
+      console.log(data)
       that.setState({
-        location: location,
-        temp:temp,
+        location: data.location,
+        temp:data.temp,
         isLoading: false
       })
     }, function(e){
@@ -70,7 +71,7 @@ var Weather = React.createClass({
 
     return (
       <div>
-        <h1 className="text-center page-title">Get Weather</h1>
+        <h1 className="text-center page-title">Get Temp</h1>
         <WeatherForm onSearch={this.handleSearch}/>
         {renderMessage()}
         {renderError()}
