@@ -1,0 +1,21 @@
+$space-large: 2.5rem;
+$title-color: purple;
+
+$dark-purple    : #512DA8;
+$purple : #673AB7;
+$light-purple   : #D1C4E9;
+$pale           : #FFFFFF;
+$blue           : #00BCD4;
+$dark           : #212121;
+$grey           : #757575;
+$light-grey     : #BDBDBD;
+
+.page-title {
+  margin-top: $space-large;
+  margin-bottom: $space-large;
+  color: $grey;
+}
+
+input[type=search] {
+  box-shadow: none;
+}
