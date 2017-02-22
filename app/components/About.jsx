@@ -2,7 +2,12 @@ var React = require('react')
 
 var About = (props) => {
   return (
-      <h2>The about comp</h2>
+      <div>
+        <h1 className="webpac">About</h1>
+        <p>This app uses React, React-router, Express and Axios.</p>
+        <p>I used Babel, Webpack, Foundation and jQuery during dev.</p>
+        <p>The app pulls third party data form the Opem Weather Api</p>
+      </div>
   )
 }
 
